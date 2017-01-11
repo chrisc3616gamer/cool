@@ -1,0 +1,11 @@
+<% include top %>
+<% if (typeof geloval !== "undefined") { %>
+  <p>Gel for <%= gelonum %> is <%= geloval %></p>
+  <hr/>
+<% } %>
+<p>Enter a number to see its' Gel number</p>
+<form name='gel' action='/gel' method='get'>
+<input type='text' name='gelonum' />
+<input type='submit' value='Submit' />
+</form>
+<% include bottom %>
